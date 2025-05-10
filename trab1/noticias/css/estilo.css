@@ -1,0 +1,107 @@
+.logo{
+    background-image:url("../img/orelha.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    float: left;
+    margin: 5px;
+}
+.pedra{
+    background-image:url("../img/preda.jpeg");
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    margin-left:auto;
+    margin-right:auto;
+}
+.azul{
+    background-image:url("../img/azul.png");
+    width: auto;
+    height: 50px;
+    background-size: cover;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {min-height: 100vh;}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.rodape{
+    top: 3;
+    background-color: #ff0000;
+    color: rgb(214, 69, 69);
+    padding: 5px;
+    z-index: 1000;
+    height: 80px;
+    height: 500px;
+}
+
+.menu-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ff7b00;
+    color: white;
+    padding: 5px;
+    z-index: 1000;
+    height: 80px;
+}
+
+.menu-sticky img {
+    width: 50px;
+}
+.menu-sticky nav a {
+    color: white;
+    margin: 0 15px;
+}
+nav {
+    text-align: center;
+}
+.menu-sticky nav a:hover {
+    color: #ffd700;
+}
+
+.secao {
+    padding: 10px ; 
+    min-height: 100vh ;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+#home {
+    background-color: #e0e0e0;
+}
+
+#sobre {
+    background-color: #f0f0f0;
+}
+
+#fofocas {
+    background-color: #e0e0e0;
+}
+
+#contato {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
