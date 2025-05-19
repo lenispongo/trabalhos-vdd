@@ -8,8 +8,8 @@
 }
 .pedra{
     background-image:url("../img/preda.jpeg");
-    max-width: 90vw;
-    max-height: 90vh;
+    width: 90vw;
+    height: 90vh;
     background-size: cover;
     margin-left:auto;
     margin-right:auto;
