@@ -16,7 +16,7 @@
 }
 .azul{
     background-image:url("../img/azul.png");
-    width: auto;
+    width: 100vw;
     height: 50px;
     background-size: cover;
     margin-left:auto;
