@@ -1,3 +1,7 @@
+
+
+
+
 .logo{
     background-image:url("../img/orelha.png");
     width: 50px;
@@ -100,7 +104,7 @@
 }
 .azul{
     background-image:url("../img/azul.png");
-    width: 100vw;
+    width: 98vw;
     height: 50px;
     background-size: cover;
     margin-right:auto;
@@ -127,8 +131,12 @@
 .formulario{
     display: block;
     Justify-content:flex-start;
-    background-color: #ff0000;
+    background-color: #7454d3;
     margin: 5px;
+    padding-bottom: 10px;
+}
+.formulario div{
+    margin: 10px
 }
 
 .imagem {
@@ -158,16 +166,21 @@ body {
 .menu-sticky {
     position: sticky;
     top: 0;
-    background-color: #ff7b00;
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    z-index: 1000;
-    height: 80px;
-    width: 100vw;
+    z-index: 400;
 }
 .laranja{
     background-color: #ff7b00;
     height: 9vh;
+}
+.ajusta-menu{
+    background-color: #ff7b00;
+    z-index: 40;
+}
+.ajusta-carrossel{
+    margin-top: 0px;
+}
+.ajusta-logo{
+    margin-top: 1px;
 }
 .cookies {
     position: fixed;
@@ -203,34 +216,101 @@ nav {
 }
 
 .secao {
-    padding: 10px ; 
     min-height: 100vh ;
     text-align: center;
     scroll-margin-top: 80px;
-    width: 100vw;
+    width: 98vw;
 }
+.telemarketing{
+    position: relative;
 
+    transition-duration: 2s, 2s, 4s; 
+    animation-name: exemplo2;  
+    animation-duration: 2s;       
+    animation-iteration-count: infinite;  
+    animation-direction:normal ; 
+    animation-timing-function:linear; 
+    animation-fill-mode:both;
+}
+@keyframes exemplo2 {
+    0%   {top: 0px} 
+    25%  {top: 3px}
+    50%  {top: 6px}
+    75%  {top: 3px}
+    100% {top: 0px}
+  }
+.animacao {
+    animation: linear chega both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+@keyframes chega {
+    0% { transform:translateY(100%) }
+    100% { transform:translateY(0%) }
+}
+.telefone {
+    transition-property: width, height;
+    transition-duration: 2s, 2s, 4s; 
+
+    
+  }
+  @keyframes exemplo {
+    0%   {transform:rotate(0deg) 
+                    translate(0px)
+        }  
+        
+    25% {transform:rotate(30deg)
+                    translate(0px)            
+        }
+  
+    50%   {transform:rotate(0deg) 
+                  translate(0px)
+      }  
+  
+    75% {transform:rotate(-30deg)
+      translate(0px)  
+    }
+  
+    100%   {transform:rotate(0deg) 
+                    translate(0px)
+        }  
+  }
+.telefone :hover {
+    width: 100px;
+    height: 100px;
+
+    animation-name: exemplo;  
+    animation-duration: 2s;       
+    animation-iteration-count: infinite;  
+    animation-direction:normal ; 
+    animation-timing-function:linear; 
+    animation-fill-mode:both;  
+  }
+
+  
 #inicio {
     background-color: #f0f0f0;
 }
-@media (width < 9px) {
-    #inicio{
-        background-color: #ff0000;
-    }
-}
 
 #sobre {
-    background-color: #fffefe;
+    background-color: #e0e0e0;
 }
 
 #fofocas {
     background-color: #f0f0f0;
 }
 
+#opiniao {
+    background-color: #e0e0e0;
+
+}
+#semelhantes {
+    background-color: #f0f0f0;
+}
+
 #contato {
     background-color: #e0e0e0;
 }
-
 
 
 
