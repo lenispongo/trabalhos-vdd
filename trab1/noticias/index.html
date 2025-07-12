@@ -14,19 +14,40 @@
 </head>
 <body>
     <header class="menu-sticky">
-        <div class="logo">
-        </div>
-        <h1>Fofoquiusos</h1>
-        <nav>
-            <a href="#inicio">inico</a>
-            <a href="#sobre">sobre</a>
-            <a href="#fofocas">fofocas</a>
-            <!-- <a href="#contato">Contato</a> -->
-        </nav>
+        <nav class="navbar navbar-expand-sm navbar-light ajusta-menu">
+            <div class="container-fluid">
+              <a class="navbar-brand ajusta-logo" href="#inicio">
+                <div class="logo">
+  
+                </div>
+                Fofoquiusos
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#fofocas">Fofocas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">contatos</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav> 
     </header>
     <main>
         
-        <div class="cookies" id="demo" class="collapse">
+        <!-- <div class="cookies" id="demo" class="collapse">
             <div class="laranja">
                 <div class="logo"></div>
                 <h1>Fofoquiusos</h1>
@@ -40,62 +61,13 @@
                 <button data-bs-toggle="collapse" data-bs-target="#demo">recusar cookies</button>
             </div>
             
-        </div>
+        </div> -->
 
         <section id="inicio" class="secao">
                 <div>
-                    <h2>temporario</h2>
-                    <p>temporario</p>
+                    <h2>login</h2>
+                    <p>para uma melhor experiencia a gente recomenda botar os seus dados no formulario para que nos podemos recomendar noticias de maneira mais exata para você</p>
                     <div class="container">
-                        <div class="formulario">
-                            <form>
-                        <fieldset>
-                            <div>
-                                <legend>Informações do usuario</legend>
-                            </div>
-                          
-                          <div>
-                            <label for="name">
-                            <span>Nome: </span>
-                            <strong><abbr title="required">*</abbr></strong>
-                          </label>
-                          <input type="text" id="name" name="username" />
-                        </div>
-                          
-                          <div>
-                            <label for="mail">
-                            <span>E-mail: </span>
-                            <strong><abbr title="required">*</abbr></strong>
-                          </label>
-                          <input type="email" id="mail" name="usermail" />
-                        </div>
-                          
-                          <div>
-                            <label for="date">
-                            <span>Data de nascimento:</span>
-                            <strong><abbr title="required">*</abbr></strong>
-                          </label>
-                          <input type="date" id="date" name="expiration" />
-                          </div>
-                          
-                          <div>
-                            <label>
-                            <span>Registro: </span>
-                            <strong><abbr title="required">*</abbr></strong>
-                          </label>
-                          <input type="text" id="name" name="username"/>
-                          </div>
-                          
-                          <div>
-                            <label>
-                            <span>Telefone: </span>
-                            <strong><abbr title="required">*</abbr></strong>
-                          </label>
-                          <input type="text" id="name" name="username"/>
-                        </div>
-                        </fieldset>
-                      </form>
-                    </div>
                         <div class="imagem">
                             <img srcset="img/prancheta-150.webp 150w,
                                          img/prancheta-200.webp 200w,
@@ -108,6 +80,56 @@
                             width="272" 
                             height="185"></img>
                         </div>
+                        <div class="formulario">
+                            <form>
+                                <fieldset>
+                                    <div>
+                                        <legend>Informações do usuario</legend>
+                                    </div>
+                                
+                                    <div>
+                                        <label for="name">
+                                        <span>Nome: </span>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                        </label>
+                                        <input type="text" id="name" name="username" />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="mail">
+                                        <span>E-mail: </span>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                        </label>
+                                        <input type="email" id="mail" name="usermail" />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="date">
+                                        <span>Data de nascimento:</span>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                        </label>
+                                        <input type="date" id="date" name="expiration" />
+                                    </div>
+                                    
+                                    <div>
+                                        <label>
+                                        <span>Registro: </span>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                        </label>
+                                        <input type="text" id="name" name="username"/>
+                                    </div>
+                                    
+                                    <div>
+                                        <label>
+                                        <span>Telefone: </span>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                        </label>
+                                        <input type="text" id="name" name="username"/>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        
                     </div>
                     
                                         
@@ -119,7 +141,7 @@
             <div>
                 <h2>Sobre nós</h2>
                 <p>olá, nosso site se especializa em informar de maneira correta ambos os lados de uma fofoca sem opinar e usando as exatas palavras usadas pelas pessoas envolvidas no incidente e explicar certos eventos enquanto verificamos quais rumores existem, quais são verdadeiras, quais são falsas e quais não temos informações para trazer o melhor conteúdo para você</p>
-                <div class="fofoqueiras">
+                <div class="fofoqueiras animacao">
                     <div class="fofoqueiras-imagem"></div>
                     <div class="fofoqueiras-imagem-2"></div>
                     <div class="fofoqueiros-imagem"></div>
@@ -134,18 +156,133 @@
             <div>
                 <h2>"vantagem"</h2>
                 <p>adolecente de 15 anos diz "levar vantagem" apos roubar fio de cobre em minas gerais e é apedrejado pelos cidadões locais incluindo policias, politicos e uma mulher gravida</p>
-                <div class="pedra"></div>
+                <div class="animacao">
+                    <div id="demo2" class="carousel slide ajusta-carrossel" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/preda2.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/cobre.jpeg" alt="Chicago" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/roubo.jpeg" alt="New York" class="d-block" style="width:100%">
+                        </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <p>
+                    <h3>
+                        dados das vendas depois do incidente 
+                    </h3>
+                </p>
+                
+                <table class="table table-striped table-bordered table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th>itens</th>
+                            <th>vendidos</th>
+                            <th>preços</th>
+                            <th>total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>pedras</td>
+                            <td>35</td>
+                            <td>R$19,99</td>
+                            <td>R$699,65</td>
+                        </tr>
+                        <tr>
+                            <td>porretes</td>
+                            <td>15</td>
+                            <td>R$69,99</td>
+                            <td>R$1049,85</td>
+                        </tr>
+                        <tr>
+                            <td>fios</td>
+                            <td>69</td>
+                            <td>R$9,99</td>
+                            <td>R$689,31</td>
+
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
         
-        
-
-        <!-- <section id="contato" class="secao">
+        <section id="opiniao" class="secao">
             <div>
-                <h2>temporario</h2>
-                <p>temporario</p>
+                <h2>
+                    avalição
+                </h2>
+                <p>
+                    caso você queria que mais fofocas desse tipo apareçâo ou só não gosta desse tipo de fofoca você pode sempre avaliar a fofoca
+                </p>
+                <div class="animacao">
+                    <img src="img/estrelas.png">
+                </div>
+                <form>
+                    <input type="radio" id="1" name="rating" value="1 estrela">
+                    <label for="1 estrela">1 estrela</label><br>
+                    <input type="radio" id="2" name="rating" value="2 estrela">
+                    <label for="css">2 estrelas</label><br>
+                    <input type="radio" id="3" name="rating" value="3 estrela">
+                    <label for="javascript">3 esstrelas</label><br>
+                    <input type="radio" id="4" name="rating" value="4 estrela">
+                    <label for="javascript">4 estrelas</label><br>
+                    <input type="radio" id="5" name="rating" value="5 estrela">
+                    <label for="javascript">5 estrelas</label>
+                </form> 
             </div>
-        </section> -->
+        </section>
+
+        <section id="semelhantes" class="secao">
+            <div>
+                <h2>
+                    recomendados
+                </h2>
+                <p>
+                    aqui estão noticias parecidas com essa e/ou com as que você mais gostou
+                </p>
+                <div>
+                    <img src="img/sem-conta.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <div>
+                <h2>contato</h2>
+                <p>caso você tenha uma fofoca para contar e/ou queira mais informações e/ou outras coisas, por favor nos contate no numero abaixo</p>
+                <div class="animacao">
+                    <div class="telefone">
+                        <img src="img/telefone.png">
+                    </div>
+                    <h3>telefone:censurado</h3>
+                    <div class="telemarketing">
+                        <img src="img/escutando.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="azul">
@@ -154,5 +291,4 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
 </html>
