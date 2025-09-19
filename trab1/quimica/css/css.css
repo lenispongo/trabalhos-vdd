@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+header{
+    border: solid 5px blue;
+    margin: 5px;
+    padding: 5px;
+}
+section{
+    border: solid 5px greenyellow;
+    margin: 5px;
+    padding: 5px;
+}
+footer{
+    border: solid 5px yellow;
+    margin: 5px;
+    padding: 5px;
+}
+#resposta-1{
+    display: none;
+    color: white;
+}
+#resposta-2{
+    display: none;
+    color: white;
+}
+#resposta-3{
+    display: none;
+    color: white;
+}
+#erro-q1{
+    display: none;
+    color: white;
+}
+#erro-q2{
+    display: none;
+    color: white;
+}
+#erro-q3{
+    display: none;
+    color: white;
+}
+#questao-2{
+    display: none;
+}
+#questao-3{
+    display: none;
+}
+#botao-1{
+    display: block;
+    background-color: rgb(77, 75, 75);
+    color: white;
+}
+#botao-2{
+    display: block;
+    background-color: rgb(77, 75, 75);
+    color: white;
+}
+#botao-3{
+    display: block;
+    background-color: rgb(77, 75, 75);
+    color: white;
+}
+#curiosidades-1{
+    display: none;
+}
+#curiosidades-2{
+    display: none;
+}
+#curiosidades-3{
+    display: none;
+}
+.claro{
+    color: white;
+}
